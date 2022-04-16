@@ -1,0 +1,73 @@
+create or replace view V_SITEPARTSOURCE_PRICING(
+	DATASOURCEKEY,
+	SITECODE,
+	SITEPARTCODE,
+	SUPPLIERCORPORATIONDSCODE,
+	SITEPARTSOURCETYPECODE,
+	PURCHASINGORGANIZATIONCODE,
+	EFFECTIVEFROMDATE,
+	EFFECTIVETODATE,
+	SITEPARTSOURCEPRICINGREFERENCE,
+	UNITPRICE,
+	PRICEUNIT,
+	UNITOFMEASUREDSCODE,
+	CURRENCYCODE,
+	STATUSCODE,
+	DELETEFLAG,
+	CORPORATIONDSTYPECODE
+) as
+/*--------------------------------------------------------------------
+
+This view is used to spend_analytics 
+-----------------------------------------------------------------------
+Revision History
+-----------------------------------------------------------------------
+Date            Developer               Comments
+-----------------------------------------------------------------------
+2021-02-24      Noel San Juan          Initial Revision
+*/
+SELECT * 
+FROM 
+(
+	SELECT
+		DATASOURCEKEY,
+		SITECODE, 
+        SITEPARTCODE, 
+        SUPPLIERCORPORATIONDSCODE, 
+        SITEPARTSOURCETYPECODE, 
+        PURCHASINGORGANIZATIONCODE, 
+        EFFECTIVEFROMDATE, 
+        EFFECTIVETODATE, 
+        SITEPARTSOURCEPRICINGREFERENCE, 
+        UNITPRICE, 
+        PRICEUNIT, 
+        UNITOFMEASUREDSCODE, 
+        CURRENCYCODE, 
+        STATUSCODE, 
+        DELETEFLAG, 
+        CORPORATIONDSTYPECODE 
+	FROM 
+		CONFORMED.V_ECC_HA_SITEPARTSOURCE_PRICING
+
+	UNION ALL
+
+	SELECT
+		DATASOURCEKEY,
+		SITECODE, 
+        SITEPARTCODE, 
+        SUPPLIERCORPORATIONDSCODE, 
+        SITEPARTSOURCETYPECODE, 
+        PURCHASINGORGANIZATIONCODE, 
+        EFFECTIVEFROMDATE, 
+        EFFECTIVETODATE, 
+        SITEPARTSOURCEPRICINGREFERENCE, 
+        UNITPRICE, 
+        PRICEUNIT, 
+        UNITOFMEASUREDSCODE, 
+        CURRENCYCODE, 
+        STATUSCODE, 
+        DELETEFLAG, 
+        CORPORATIONDSTYPECODE 
+	FROM 
+		CONFORMED.V_HCC_HA_SITEPARTSOURCE_PRICING
+) a;
