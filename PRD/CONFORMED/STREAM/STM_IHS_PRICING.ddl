@@ -1,0 +1,1 @@
+create or replace stream STM_IHS_PRICING on table IHS_PRICING append_only = true;

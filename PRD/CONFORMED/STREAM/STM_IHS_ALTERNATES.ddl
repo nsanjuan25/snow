@@ -1,0 +1,1 @@
+create or replace stream STM_IHS_ALTERNATES on table IHS_ALTERNATES append_only = true;

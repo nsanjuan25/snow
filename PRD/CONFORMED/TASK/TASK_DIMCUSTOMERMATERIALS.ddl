@@ -1,0 +1,4 @@
+create or replace task TASK_DIMCUSTOMERMATERIALS
+	warehouse=WH_TASKS
+	after PRD.CONFORMED.TASK_START_MATERIALS
+	as call conformed.DIMCUSTOMERMATERIALS_ADD();

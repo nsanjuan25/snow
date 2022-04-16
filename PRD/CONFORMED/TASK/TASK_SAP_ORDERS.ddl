@@ -1,0 +1,4 @@
+create or replace task TASK_SAP_ORDERS
+	warehouse=WH_TASKS
+	after PRD.CONFORMED.TASK_START_ORDERS
+	as CALL CONFORMED.SAP_ORDERS_ADD();

@@ -1,0 +1,1 @@
+create or replace stream STM_IHS_BASIC on table IHS_BASIC append_only = true;

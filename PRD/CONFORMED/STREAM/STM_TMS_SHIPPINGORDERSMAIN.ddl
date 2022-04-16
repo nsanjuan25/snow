@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_SHIPPINGORDERSMAIN on table TMS_SHIPPINGORDERSMAIN;

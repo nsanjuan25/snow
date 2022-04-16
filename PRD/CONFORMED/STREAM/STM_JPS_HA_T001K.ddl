@@ -1,0 +1,1 @@
+create or replace stream STM_JPS_HA_T001K on table JPS_HA_T001K;

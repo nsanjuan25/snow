@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_EVENTS on table TMS_EVENTS;

@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_ORDERSITEMS on table TMS_ORDERSITEMS;

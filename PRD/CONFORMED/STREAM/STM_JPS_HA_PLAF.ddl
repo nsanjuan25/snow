@@ -1,0 +1,1 @@
+create or replace stream STM_JPS_HA_PLAF on table "PRD.CONFORMED.JPS_HA_PLAF";

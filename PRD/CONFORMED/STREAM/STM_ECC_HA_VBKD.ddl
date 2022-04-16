@@ -1,0 +1,1 @@
+create or replace stream STM_ECC_HA_VBKD on table ECC_HA_VBKD;

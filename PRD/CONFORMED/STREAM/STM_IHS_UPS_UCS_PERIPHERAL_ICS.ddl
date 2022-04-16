@@ -1,0 +1,1 @@
+create or replace stream STM_IHS_UPS_UCS_PERIPHERAL_ICS on table IHS_UPS_UCS_PERIPHERAL_ICS append_only = true;

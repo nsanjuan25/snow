@@ -1,0 +1,1 @@
+create or replace stream STM_PLA_HA_EBAN on table PLA_HA_EBAN;

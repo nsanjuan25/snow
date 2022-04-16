@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_TGCS on table TMS_TGCS;

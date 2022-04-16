@@ -1,0 +1,4 @@
+create or replace task TASK_INCONTROL_TMS_DIMEXECUTIONLOADNOTES
+	warehouse=WH_TASKS
+	after PRD.CONFORMED.TASK_TMS_EXECUTIONLOADNOTES_S1
+	as call InControl_TMS_DimExecutionLoadNotes();

@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_CUSTOMERINVOICEMAIN on table TMS_CUSTOMERINVOICEMAIN;

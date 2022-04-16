@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_EXECUTIONLOADMAIN on table TMS_EXECUTIONLOADMAIN;

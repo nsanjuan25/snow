@@ -1,0 +1,1 @@
+create or replace stream STM_COUPA_INVENTORY on table COUPA_INVENTORY append_only = true;

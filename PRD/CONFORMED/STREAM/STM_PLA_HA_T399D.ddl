@@ -1,0 +1,1 @@
+create or replace stream STM_PLA_HA_T399D on table "PRD.CONFORMED.PLA_HA_T399D";

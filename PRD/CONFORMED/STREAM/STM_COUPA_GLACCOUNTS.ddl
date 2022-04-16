@@ -1,0 +1,1 @@
+create or replace stream STM_COUPA_GLACCOUNTS on table COUPA_GLACCOUNTS append_only = true;

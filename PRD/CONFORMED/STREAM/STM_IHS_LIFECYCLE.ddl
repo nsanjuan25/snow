@@ -1,0 +1,1 @@
+create or replace stream STM_IHS_LIFECYCLE on table IHS_LIFECYCLE append_only = true;

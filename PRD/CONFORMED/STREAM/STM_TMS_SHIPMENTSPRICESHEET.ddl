@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_SHIPMENTSPRICESHEET on table TMS_SHIPMENTSPRICESHEET;

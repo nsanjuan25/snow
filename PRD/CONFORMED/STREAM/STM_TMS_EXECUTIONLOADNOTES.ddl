@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_EXECUTIONLOADNOTES on table TMS_EXECUTIONLOADNOTES;

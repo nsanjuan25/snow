@@ -1,0 +1,1 @@
+create or replace stream STM_BW_HA_LIPS on table BW_HA_LIPS;

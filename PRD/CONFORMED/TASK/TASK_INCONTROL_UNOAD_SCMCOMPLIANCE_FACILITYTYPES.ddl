@@ -1,0 +1,4 @@
+create or replace task TASK_INCONTROL_UNOAD_SCMCOMPLIANCE_FACILITYTYPES
+	warehouse=WH_TASKS
+	after PRD.CONFORMED.TASK_SCMCOMPLIANCE_FACILITYTYPES
+	as call InControl_SCMCompliance_FacilityTypes();

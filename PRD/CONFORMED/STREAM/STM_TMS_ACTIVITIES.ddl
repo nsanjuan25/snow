@@ -1,0 +1,1 @@
+create or replace stream STM_TMS_ACTIVITIES on table TMS_ACTIVITIES;
